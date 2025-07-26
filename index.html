@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>My Portfolio</h1>
+  <button id="adminBtn">Admin Panel</button>
+</header>
+
+<section class="profile">
+  <img src="profile.jpg" alt="Profile Picture" id="profileImg" />
+  <h2 id="name">Your Name</h2>
+  <p id="bio">A short bio about yourself.</p>
+</section>
+
+<section class="projects">
+  <h3>Projects</h3>
+  <ul>
+    <li>Project 1</li>
+    <li>Project 2</li>
+    <li>Project 3</li>
+  </ul>
+</section>
+
+<!-- Admin Panel (hidden initially) -->
+<div id="adminPanel" class="admin-hidden">
+  <h2>Edit Profile</h2>
+  <label>Name: <input type="text" id="editName" /></label><br/>
+  <label>Bio: <textarea id="editBio"></textarea></label><br/>
+  <label>Profile Image URL: <input type="text" id="editProfileImg" /></label><br/>
+  <button id="saveBtn">Save</button>
+  <button id="closeAdminBtn">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
